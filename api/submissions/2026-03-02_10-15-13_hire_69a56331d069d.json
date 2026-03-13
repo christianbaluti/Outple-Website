@@ -1,0 +1,12 @@
+{
+    "timestamp": "2026-03-02 10:15:13",
+    "type": "hire",
+    "company": "Test Corp",
+    "name": "John Doe",
+    "email": "john@test.com",
+    "phone": "+1234567890",
+    "role": "Software Developer",
+    "timeline": "Within 1 week",
+    "message": "Looking for React developers",
+    "email_sent": true
+}
