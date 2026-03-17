@@ -63,11 +63,11 @@ export default function HireTeam() {
       {/* Hero */}
       <section className="py-20 bg-gradient-to-br from-[#1a0533] to-[#3d1078]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <span className="inline-block bg-white/10 text-purple-200 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">For Businesses</span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
+          <span className="inline-block bg-white/10 text-purple-200 text-[14px] font-semibold leading-[1.3] px-4 py-1.5 rounded-full mb-6 border border-white/20">For Businesses</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">
             Hire World-Class <span className="text-purple-300">Remote Talent</span>
           </h1>
-          <p className="text-xl text-purple-200 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[18px] text-purple-200 max-w-2xl mx-auto leading-[1.6]">
             Build your ideal team from Malawi's top talent pool. Skilled, vetted, and remote-ready professionals — placed in 48 hours.
           </p>
         </div>
@@ -76,17 +76,17 @@ export default function HireTeam() {
       {/* Services */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Staffing Solutions</h2>
+          <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] text-center mb-12">Our Staffing Solutions</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((s, i) => (
               <div key={i} className="border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
                 <img src={s.img} alt={s.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{s.title}</h3>
-                  <p className="text-gray-500 text-sm mb-4 leading-relaxed">{s.desc}</p>
+                  <h3 className="text-[22px] font-semibold text-gray-900 leading-[1.3] mb-2">{s.title}</h3>
+                  <p className="text-gray-500 text-[16px] leading-[1.6] mb-4">{s.desc}</p>
                   <ul className="space-y-2">
                     {s.features.map((f, j) => (
-                      <li key={j} className="flex items-center gap-2 text-sm text-gray-600">
+                      <li key={j} className="flex items-center gap-2 text-[14px] leading-[1.6] text-gray-600">
                         <CheckCircle className="w-4 h-4 text-[#3d1078] flex-shrink-0" />
                         {f}
                       </li>
@@ -103,8 +103,8 @@ export default function HireTeam() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-3">Request Talent</h2>
-            <p className="text-gray-500">Fill in your requirements and our team will be in touch within 24 hours.</p>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-3">Request Talent</h2>
+            <p className="text-gray-500 text-[16px] leading-[1.6]">Fill in your requirements and our team will be in touch within 24 hours.</p>
           </div>
 
           {submitted ? (
@@ -112,44 +112,44 @@ export default function HireTeam() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Request Received!</h3>
-              <p className="text-gray-500">Our team will contact you within 24 hours to discuss your requirements.</p>
+              <h3 className="text-[28px] font-semibold text-gray-900 leading-[1.3] mb-2">Request Received!</h3>
+              <p className="text-gray-500 text-[16px] leading-[1.6]">Our team will contact you within 24 hours to discuss your requirements.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 space-y-5">
               {error && (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-[14px] leading-[1.6]">
                   {error}
                 </div>
               )}
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Company Name *</label>
-                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} />
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Company Name *</label>
+                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Contact Name *</label>
-                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
-                </div>
-              </div>
-              <div className="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                  <input required type="email" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                  <input className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Contact Name *</label>
+                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Role(s) Required *</label>
-                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.role} onChange={e => setFormData({...formData, role: e.target.value})} />
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Email Address *</label>
+                  <input required type="email" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Hiring Timeline</label>
-                  <select className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.timeline} onChange={e => setFormData({...formData, timeline: e.target.value})}>
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Phone Number</label>
+                  <input className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 gap-5">
+                <div>
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Role(s) Required *</label>
+                  <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.role} onChange={e => setFormData({...formData, role: e.target.value})} />
+                </div>
+                <div>
+                  <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Hiring Timeline</label>
+                  <select className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.timeline} onChange={e => setFormData({...formData, timeline: e.target.value})}>
                     <option value="">Select timeline</option>
                     <option>Within 48 hours</option>
                     <option>Within 1 week</option>
@@ -159,10 +159,10 @@ export default function HireTeam() {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Additional Requirements</label>
-                <textarea rows={4} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} placeholder="Skills, experience level, tools required..." />
+                <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Additional Requirements</label>
+                <textarea rows={4} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} placeholder="Skills, experience level, tools required..." />
               </div>
-              <button type="submit" disabled={loading} className="w-full bg-[#3d1078] text-white font-semibold py-4 rounded-xl hover:bg-[#2d0a5e] transition-colors flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed">
+              <button type="submit" disabled={loading} className="w-full bg-[#3d1078] text-white text-[16px] font-semibold py-4 rounded-xl hover:bg-[#2d0a5e] transition-colors flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed">
                 {loading ? (
                   <><Loader2 className="w-5 h-5 animate-spin" /> Sending...</>
                 ) : (

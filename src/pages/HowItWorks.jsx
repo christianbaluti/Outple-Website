@@ -70,9 +70,9 @@ export default function HowItWorksPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/75 to-black/60" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-32 w-full">
-          <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">The Process</span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">How It Works</h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto">
+          <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">The Process</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">How It Works</h1>
+          <p className="text-[18px] text-white/75 leading-[1.6] max-w-2xl mx-auto">
             Whether you're a business looking to hire or a professional looking for work, our process is designed to be simple, transparent, and fast.
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function HowItWorksPage() {
                 { key: "jobseeker", label: "For Job Seekers" },
               ].map(tab => (
                 <button key={tab.key} onClick={() => setActiveTab(tab.key)}
-                  className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${activeTab === tab.key ? "bg-[#432d7e] text-white shadow" : "text-gray-500 hover:text-gray-800"}`}>
+                  className={`px-6 py-2.5 rounded-full text-[14px] font-semibold transition-all ${activeTab === tab.key ? "bg-[#432d7e] text-white shadow" : "text-gray-500 hover:text-gray-800"}`}>
                   {tab.label}
                 </button>
               ))}
@@ -96,7 +96,7 @@ export default function HowItWorksPage() {
           </div>
 
           {activeTab === "business" && (
-            <p className="text-center text-[#432d7e] font-semibold text-lg mb-14">We've Made Outsourcing Seamless.</p>
+            <p className="text-center text-[#432d7e] font-semibold text-[18px] leading-[1.3] mb-14">We've Made Outsourcing Seamless.</p>
           )}
 
           <div className="space-y-20">
@@ -104,8 +104,8 @@ export default function HowItWorksPage() {
               <div key={i} className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
                 <div className={i % 2 === 1 ? "lg:col-start-2" : ""}>
                   <span className="text-6xl font-bold text-gray-100 block mb-2 leading-none">{step.num}</span>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h2>
-                  <p className="text-gray-500 leading-relaxed text-lg">{step.desc}</p>
+                  <h2 className="text-[28px] font-semibold text-gray-900 leading-[1.3] mb-4">{step.title}</h2>
+                  <p className="text-gray-500 text-[16px] leading-[1.6]">{step.desc}</p>
                 </div>
                 <div className={i % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
                   <img src={step.img} alt={step.title} className="w-full h-72 object-cover rounded-2xl shadow-lg" />
@@ -120,7 +120,7 @@ export default function HowItWorksPage() {
               {businessPromises.map((promise, i) => (
                 <div key={i} className="flex items-center gap-3 bg-purple-50 px-6 py-3 rounded-full">
                   <promise.icon className="w-5 h-5 text-[#432d7e]" />
-                  <span className="font-semibold text-gray-800">{promise.text}</span>
+                  <span className="font-semibold text-gray-800 text-[16px] leading-[1.6]">{promise.text}</span>
                 </div>
               ))}
             </div>
@@ -132,20 +132,20 @@ export default function HowItWorksPage() {
       <section className="py-24 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Security & Compliance</span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Security built for UK businesses</h2>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Security & Compliance</span>
+            <h2 className="text-[36px] lg:text-[42px] font-bold text-white leading-[1.2] mb-6">Security built for UK businesses</h2>
+            <p className="text-gray-300 text-[18px] max-w-3xl mx-auto leading-[1.6]">
               Outple provides a secure, professionally managed environment for your remote employees. Our framework is aligned with Cyber Essentials Plus and ISO 27001 principles, ensuring your data, systems and access are protected.
             </p>
-            <p className="text-gray-400 mt-4">We don't rely on hope, trust or informal arrangements — we rely on structured controls, auditing and policy-driven operations.</p>
+            <p className="text-gray-400 text-[16px] leading-[1.6] mt-4">We don’t rely on hope, trust or informal arrangements — we rely on structured controls, auditing and policy-driven operations.</p>
           </div>
 
           {/* Security Principles */}
           <div className="mb-16">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">Our Security Principles</h3>
+            <h3 className="text-[22px] font-semibold text-white leading-[1.3] mb-6 text-center">Our Security Principles</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {["Least privilege", "Separation of duties", "Device compliance by default", "Controlled access", "Data minimisation", "Policy-led operations", "Auditable, traceable actions"].map((principle, i) => (
-                <span key={i} className="bg-white/10 text-white/90 px-4 py-2 rounded-full text-sm">{principle}</span>
+                <span key={i} className="bg-white/10 text-white/90 px-4 py-2 rounded-full text-[14px] leading-[1.5]">{principle}</span>
               ))}
             </div>
           </div>
@@ -157,9 +157,9 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <Laptop className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">1. Managed & Secured Devices</h4>
-              <p className="text-gray-400 text-sm mb-4">Outple employees work on company-managed laptops with:</p>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">1. Managed & Secured Devices</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">Outple employees work on company-managed laptops with:</p>
+              <ul className="space-y-2 text-[14px] leading-[1.6] text-gray-300">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Mandatory full-disk encryption</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Enforced strong passwords & MFA</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Remote lock and wipe capability</li>
@@ -173,9 +173,9 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <Building className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">2. Secure Office Infrastructure</h4>
-              <p className="text-gray-400 text-sm mb-4">A stable, supervised environment that removes risks:</p>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">2. Secure Office Infrastructure</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">A stable, supervised environment that removes risks:</p>
+              <ul className="space-y-2 text-[14px] leading-[1.6] text-gray-300">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Enterprise-grade fibre connection</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Redundant backup connection</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Generator / backup power</li>
@@ -189,20 +189,20 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <UserCheck className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">3. Background Checks & ID Verification</h4>
-              <p className="text-gray-400 text-sm mb-4">All employees undergo verification:</p>
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">3. Background Checks & ID Verification</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">All employees undergo verification:</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-white text-xs font-semibold mb-2">Standard Check:</p>
-                  <ul className="space-y-1 text-xs text-gray-300">
+                  <p className="text-white text-[12px] leading-[1.5] font-semibold mb-2">Standard Check:</p>
+                  <ul className="space-y-1 text-[12px] leading-[1.5] text-gray-300">
                     <li>• ID verification</li>
                     <li>• Reference verification</li>
                     <li>• Education check</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="text-white text-xs font-semibold mb-2">Enhanced Check:</p>
-                  <ul className="space-y-1 text-xs text-gray-300">
+                  <p className="text-white text-[12px] leading-[1.5] font-semibold mb-2">Enhanced Check:</p>
+                  <ul className="space-y-1 text-[12px] leading-[1.5] text-gray-300">
                     <li>• Police Clearance</li>
                     <li>• Sanctions screening</li>
                     <li>• Adverse media report</li>
@@ -216,9 +216,9 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <Key className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">4. Access Control & Data Protection</h4>
-              <p className="text-gray-400 text-sm mb-4">Employees only access exactly what they need:</p>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">4. Access Control & Data Protection</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">Employees only access exactly what they need:</p>
+              <ul className="space-y-2 text-[14px] leading-[1.6] text-gray-300">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Role-based permissions</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Access approval workflows</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />No local storage of client data</li>
@@ -231,9 +231,9 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">5. Cyber Essentials Plus Alignment</h4>
-              <p className="text-gray-400 text-sm mb-4">Our controls follow CE+ expectations:</p>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">5. Cyber Essentials Plus Alignment</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">Our controls follow CE+ expectations:</p>
+              <ul className="space-y-2 text-[14px] leading-[1.6] text-gray-300">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />User access control</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Malware protection</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Secure configuration</li>
@@ -246,42 +246,42 @@ export default function HowItWorksPage() {
               <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center mb-4">
                 <FileCheck className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-lg font-bold text-white mb-3">6. ISO 27001-Informed Operations</h4>
-              <p className="text-gray-400 text-sm mb-4">Building ISMS around ISO 27001 practices:</p>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-3">6. ISO 27001-Informed Operations</h4>
+              <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">Building ISMS around ISO 27001 practices:</p>
+              <ul className="space-y-2 text-[14px] leading-[1.6] text-gray-300">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Risk assessments</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Policy documentation</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Incident response processes</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />Business continuity planning</li>
               </ul>
             </div>
-          </div>
 
-          {/* Client-Specific */}
-          <div className="mt-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center flex-shrink-0">
-                <Settings className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-white mb-2">7. Client-Specific Security Requirements</h4>
-                <p className="text-gray-400 text-sm mb-4">For organisations with tighter controls, we support:</p>
-                <div className="flex flex-wrap gap-2">
-                  {["VPN routing", "Dedicated VLANs", "Device restrictions", "Logging & monitoring", "Custom onboarding flows", "Security playbooks"].map((item, i) => (
-                    <span key={i} className="bg-white/10 text-white/90 px-3 py-1.5 rounded-full text-xs">{item}</span>
-                  ))}
+            {/* Client-Specific */}
+            <div className="mt-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#432d7e] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Settings className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-[18px] font-semibold text-white leading-[1.3] mb-2">7. Client-Specific Security Requirements</h4>
+                  <p className="text-gray-400 text-[14px] leading-[1.6] mb-4">For organisations with tighter controls, we support:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["VPN routing", "Dedicated VLANs", "Device restrictions", "Logging & monitoring", "Custom onboarding flows", "Security playbooks"].map((item, i) => (
+                      <span key={i} className="bg-white/10 text-white/90 px-3 py-1.5 rounded-full text-[12px] leading-[1.5]">{item}</span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Security CTA */}
-          <div className="mt-12 text-center">
-            <p className="text-white text-lg font-semibold mb-2">Security you can rely on. Stability you can trust.</p>
-            <p className="text-gray-400 mb-6">We bring UK-grade expectations to global hiring.</p>
-            <Link to={createPageUrl("Contact")} className="inline-flex items-center gap-2 bg-white text-[#432d7e] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
-              Book a call to discuss your security requirements <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            {/* Security CTA */}
+            <div className="mt-12 text-center">
+              <p className="text-white text-[18px] leading-[1.3] font-semibold mb-2">Security you can rely on. Stability you can trust.</p>
+              <p className="text-gray-400 text-[16px] leading-[1.6] mb-6">We bring UK-grade expectations to global hiring.</p>
+              <Link to={createPageUrl("Contact")} className="inline-flex items-center gap-2 bg-white text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
+                Book a call to discuss your security requirements <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -289,13 +289,13 @@ export default function HowItWorksPage() {
       {/* CTA */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to get started?</h2>
-          <p className="text-gray-500 text-lg mb-8">Join hundreds of businesses and professionals already working through Outple.</p>
+          <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">Ready to get started?</h2>
+          <p className="text-gray-500 text-[16px] leading-[1.6] mb-8">Join hundreds of businesses and professionals already working through Outple.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-[#432d7e] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
               Hire Talent <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 shadow-md text-[#432d7e] font-semibold px-8 py-4 rounded-full hover:bg-purple-50 transition-colors bg-white">
+            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 shadow-md text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-purple-50 transition-colors bg-white">
               Find a Job
             </Link>
           </div>

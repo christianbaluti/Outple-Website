@@ -21,22 +21,22 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white/90 text-sm font-medium">Outple — Since 2021</span>
+              <span className="text-white/90 text-[14px] font-medium leading-[1.5]">Outple — Since 2021</span>
             </div>
-            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">
               Build Global Teams.<br />
-              <span className="text-4xl lg:text-6xl text-white/60">
+              <span className="text-[36px] lg:text-[42px] text-white/60">
                 Empower Local Talent.
               </span>
             </h1>
-            <p className="text-xl text-white/70 leading-relaxed mb-10 max-w-xl">
+            <p className="text-[18px] text-white/70 leading-[1.6] mb-10 max-w-xl">
               Access a world-class workforce in Malawi — Africa’s best-kept talent secret — and grow your business with impact.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-white text-[#432d7e] font-bold px-8 py-4 rounded-full hover:bg-gray-50 transition-all group shadow-xl">
+              <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-white text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-gray-50 transition-all group shadow-xl">
                 Hire Talent <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to={createPageUrl("FindJobs")} className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-8 py-4 rounded-full border border-white/30 hover:bg-white/20 transition-all">
+              <Link to={createPageUrl("FindJobs")} className="inline-flex items-center gap-2 bg-white/10 text-white text-[16px] font-semibold px-8 py-4 rounded-full border border-white/30 hover:bg-white/20 transition-all">
                 Find Jobs
               </Link>
             </div>
@@ -55,8 +55,8 @@ export default function Home() {
               { value: "15+", label: "Industries Covered" },
             ].map((s, i) => (
               <div key={i}>
-                <div className="text-4xl font-bold text-white mb-1">{s.value}</div>
-                <div className="text-gray-400 text-sm">{s.label}</div>
+                <div className="text-[36px] font-bold text-white leading-[1.2] mb-1">{s.value}</div>
+                <div className="text-gray-400 text-[14px] leading-[1.5]">{s.label}</div>
               </div>
             ))}
           </div>
@@ -68,20 +68,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-4 block">What We Do</span>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">Africa's most connected staffing platform</h2>
-              <p className="text-gray-500 leading-relaxed text-lg mb-8">
+              <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-4 block">What We Do</span>
+              <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-6">Africa's most connected staffing platform</h2>
+              <p className="text-gray-500 text-[16px] leading-[1.6] mb-8">
                 Outple bridges the gap between world-class businesses and talented professionals in Malawi. We handle everything: sourcing, vetting, contracts, compliance, and ongoing support.
               </p>
               <ul className="space-y-3 mb-8">
                 {["Dedicated remote teams", "Flexible & project-based staffing", "Executive search", "Business process outsourcing"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-700">
+                  <li key={i} className="flex items-center gap-3 text-gray-700 text-[16px] leading-[1.6]">
                     <CheckCircle className="w-5 h-5 text-[#432d7e] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <Link to={createPageUrl("Services")} className="inline-flex items-center gap-2 text-[#432d7e] font-semibold hover:gap-3 transition-all group">
+              <Link to={createPageUrl("Services")} className="inline-flex items-center gap-2 text-[#432d7e] text-[16px] font-semibold hover:gap-3 transition-all group">
                 View all services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -104,17 +104,17 @@ export default function Home() {
                 className="rounded-3xl w-full h-96 object-cover shadow-2xl"
               />
               <div className="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-4 shadow-xl">
-                <p className="font-bold text-gray-900 text-sm">The Warm Heart of Africa</p>
-                <p className="text-gray-500 text-xs">GMT+2 · English-speaking · University-educated</p>
+                <p className="font-semibold text-gray-900 text-[14px] leading-[1.3]">The Warm Heart of Africa</p>
+                <p className="text-gray-500 text-[12px] leading-[1.5]">GMT+2 · English-speaking · University-educated</p>
               </div>
             </div>
             <div>
-              <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-4 block">Why Malawi?</span>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">Africa's best-kept talent secret</h2>
-              <p className="text-gray-500 leading-relaxed text-lg mb-6">
+              <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-4 block">Why Malawi?</span>
+              <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-6">Africa's best-kept talent secret</h2>
+              <p className="text-gray-500 text-[16px] leading-[1.6] mb-6">
                 Malawi's professionals are English-speaking, university-educated, and eager to work with global companies. With a time zone aligned to Europe and a culture built on resilience and warmth, they consistently exceed expectations.
               </p>
-              <Link to={createPageUrl("WhyMalawi")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+              <Link to={createPageUrl("WhyMalawi")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-6 py-3 rounded-full hover:bg-[#2d1a5e] transition-colors group">
                 Discover why <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -126,8 +126,8 @@ export default function Home() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3 block">Simple Process</span>
-            <h2 className="text-4xl font-bold text-gray-900">Hire in 4 steps</h2>
+            <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3 block">Simple Process</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2]">Hire in 4 steps</h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[
@@ -138,13 +138,13 @@ export default function Home() {
             ].map((step, i) => (
               <div key={i} className="text-center">
                 <div className="text-5xl font-bold text-gray-100 mb-3">{step.num}</div>
-                <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="font-semibold text-gray-900 text-[18px] leading-[1.3] mb-2">{step.title}</h3>
+                <p className="text-gray-500 text-[14px] leading-[1.6]">{step.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link to={createPageUrl("HowItWorks")} className="inline-flex items-center gap-2 text-[#432d7e] font-semibold hover:gap-3 transition-all group">
+            <Link to={createPageUrl("HowItWorks")} className="inline-flex items-center gap-2 text-[#432d7e] text-[16px] font-semibold hover:gap-3 transition-all group">
               See the full process <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -155,29 +155,29 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3">Our Commitment</span>
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">The Outple Promise</h2>
-            <p className="text-xl text-[#432d7e] font-semibold">People First. Purpose Always.</p>
+            <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3">Our Commitment</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-2">The Outple Promise</h2>
+            <p className="text-[18px] text-[#432d7e] font-semibold leading-[1.3]">People First. Purpose Always.</p>
           </div>
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-gray-100">
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-gray-600 text-[18px] leading-[1.6] mb-8">
               We don't just fill roles — we build bridges. Every hire through Outple:
             </p>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Empowers a skilled young professional in Malawi with life-changing work</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Empowers a skilled young professional in Malawi with life-changing work</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Drives inclusive economic growth</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Drives inclusive economic growth</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Supports your business with reliable, high-performing team members</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Supports your business with reliable, high-performing team members</span>
               </li>
             </ul>
-            <p className="text-gray-600 text-lg font-medium">
+            <p className="text-gray-600 text-[18px] leading-[1.6] font-medium">
               Outsourcing can be smart and meaningful. With Outple, it's both.
             </p>
           </div>
@@ -195,15 +195,15 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/80 to-[#1a0533]/95"></div>
         <div className="relative z-20 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Build Your Global Team?</h2>
-          <p className="text-purple-200 text-xl mb-8 max-w-2xl mx-auto">
+          <h2 className="text-[36px] lg:text-[42px] font-bold text-white leading-[1.2] mb-6">Ready to Build Your Global Team?</h2>
+          <p className="text-purple-200 text-[18px] leading-[1.6] mb-8 max-w-2xl mx-auto">
             Join companies worldwide hiring smarter with Outple. Access Malawi's brightest talent.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] font-bold px-8 py-4 rounded-full hover:bg-gray-50 transition-all group shadow-xl">
+            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-gray-50 transition-all group shadow-xl">
               Start Hiring <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all">
+            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all">
               Find Jobs
             </Link>
           </div>
@@ -213,15 +213,15 @@ export default function Home() {
       {/* Join Us Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Join Us</h2>
-          <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">Join Us</h2>
+          <p className="text-gray-500 text-[16px] leading-[1.6] mb-8 max-w-2xl mx-auto">
             Whether you're a business leader looking to scale with world-class professionals, or a skilled Malawian seeking global opportunities, Outple is here to make connections that matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-[#432d7e] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
               For Businesses <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-[#432d7e] text-[#432d7e] font-semibold px-8 py-4 rounded-full hover:bg-purple-50 transition-colors">
+            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-[#432d7e] text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-purple-50 transition-colors">
               For Job Seekers
             </Link>
           </div>

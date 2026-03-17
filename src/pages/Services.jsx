@@ -64,9 +64,9 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/75 to-black/60" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-32 w-full">
-          <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">What We Offer</span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">Our Services</h1>
-          <p className="text-lg text-white/75 leading-relaxed max-w-2xl mx-auto">
+          <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">What We Offer</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">Our Services</h1>
+          <p className="text-[18px] text-white/75 leading-[1.6] max-w-2xl mx-auto">
             From dedicated remote teams to full business process outsourcing, Outple provides the staffing solutions your business needs to grow with confidence.
           </p>
         </div>
@@ -78,18 +78,18 @@ export default function Services() {
           {services.map((s, i) => (
             <div key={i} className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
               <div className={i % 2 === 1 ? "lg:col-start-2" : ""}>
-                <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3 block">{s.tagline}</span>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">{s.title}</h2>
-                <p className="text-gray-500 leading-relaxed mb-6">{s.desc}</p>
+                <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3 block">{s.tagline}</span>
+                <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">{s.title}</h2>
+                <p className="text-gray-500 text-[16px] leading-[1.6] mb-6">{s.desc}</p>
                 <ul className="space-y-3 mb-8">
                   {s.features.map((f, j) => (
-                    <li key={j} className="flex items-start gap-3 text-gray-700">
+                    <li key={j} className="flex items-start gap-3 text-gray-700 text-[16px] leading-[1.6]">
                       <CheckCircle className="w-5 h-5 text-[#432d7e] flex-shrink-0 mt-0.5" />
                       {f}
                     </li>
                   ))}
                 </ul>
-                <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+                <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-6 py-3 rounded-full hover:bg-[#2d1a5e] transition-colors group">
                   Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -105,9 +105,9 @@ export default function Services() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3 block">Talent We Place</span>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Roles Available for Remote Hiring</h2>
-            <p className="text-gray-500 text-lg max-w-2xl mx-auto">Browse the full range of positions you can hire through Outple — all remote-ready, pre-vetted, and based in Malawi.</p>
+            <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3 block">Talent We Place</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">Roles Available for Remote Hiring</h2>
+            <p className="text-gray-500 text-[16px] leading-[1.6] max-w-2xl mx-auto">Browse the full range of positions you can hire through Outple — all remote-ready, pre-vetted, and based in Malawi.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {roles.map((role, i) => (
@@ -115,8 +115,8 @@ export default function Services() {
                 <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#432d7e] transition-colors duration-300">
                   <role.icon className="w-6 h-6 text-[#432d7e] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">{role.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{role.desc}</p>
+                <h3 className="font-semibold text-gray-900 text-[18px] leading-[1.3] mb-2">{role.title}</h3>
+                <p className="text-gray-500 text-[14px] leading-[1.6]">{role.desc}</p>
               </div>
             ))}
           </div>
@@ -126,9 +126,9 @@ export default function Services() {
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">COULDNT FIND  WHAT YOU ARE LOOKING FOR?</h2>
-          <p className="text-gray-500 text-lg mb-8">No problem! If you have a specific requirement not covered by the options above, let us know, we will tailor make it to suite your needs.</p>
-          <Link to={createPageUrl("Contact")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+          <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">Couldn't Find What You Are Looking For?</h2>
+          <p className="text-gray-500 text-[16px] leading-[1.6] mb-8">No problem! If you have a specific requirement not covered by the options above, let us know, we will tailor make it to suite your needs.</p>
+          <Link to={createPageUrl("Contact")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
             Contact Us <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

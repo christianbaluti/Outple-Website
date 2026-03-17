@@ -79,7 +79,7 @@ export default function Layout({ children, currentPageName }) {
                     onMouseEnter={() => setOpenDropdown(link.label)}
                     onMouseLeave={() => setOpenDropdown(null)}
                     style={{ zIndex: 60 }}>
-                    <button className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    <button className={`flex items-center gap-1 px-4 py-2 rounded-lg text-[14px] font-medium transition-colors ${
                       scrolled || !isHeroPage ? "text-gray-600 hover:text-[#432d7e]" : "text-white/80 hover:text-white"
                     }`}>
                       {link.label} <ChevronDown className="w-3.5 h-3.5" />
@@ -89,7 +89,7 @@ export default function Layout({ children, currentPageName }) {
                       <div className="bg-white rounded-xl shadow-xl py-2">
                         {link.children.map(child => (
                           <Link key={child.page} to={createPageUrl(child.page)}
-                            className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 transition-colors">
+                            className="block px-4 py-2.5 text-[14px] font-normal text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 transition-colors">
                             {child.label}
                           </Link>
                         ))}
@@ -99,7 +99,7 @@ export default function Layout({ children, currentPageName }) {
                   </div>
                 ) : (
                   <Link key={link.page} to={createPageUrl(link.page)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`px-4 py-2 rounded-lg text-[14px] font-medium transition-colors ${
                       currentPageName === link.page
                         ? "text-[#432d7e] bg-purple-50"
                         : scrolled || !isHeroPage
@@ -115,7 +115,7 @@ export default function Layout({ children, currentPageName }) {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-3">
               <Link to={createPageUrl("HireTeam")}
-                className="text-sm font-bold px-5 py-2.5 rounded-full bg-[#432d7e] text-white hover:bg-[#2d1a5e] transition-all shadow-lg shadow-[#432d7e]/20">
+                className="text-[14px] font-semibold px-5 py-2.5 rounded-full bg-[#432d7e] text-white hover:bg-[#2d1a5e] transition-all shadow-lg shadow-[#432d7e]/20">
                 Hire Talent
               </Link>
             </div>
@@ -133,18 +133,18 @@ export default function Layout({ children, currentPageName }) {
         {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 shadow-lg">
-            <Link to={createPageUrl("Home")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Home</Link>
-            <Link to={createPageUrl("About")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">About</Link>
-            <Link to={createPageUrl("WhyOutple")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Why Outple</Link>
-            <Link to={createPageUrl("Services")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Services</Link>
-            <Link to={createPageUrl("HowItWorks")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">How It Works</Link>
-            <Link to={createPageUrl("WhyMalawi")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Why Malawi</Link>
-            <Link to={createPageUrl("OurValues")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Our Values</Link>
-            <Link to={createPageUrl("CaseStudies")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Case Studies</Link>
-            <Link to={createPageUrl("FindJobs")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Find Jobs</Link>
-            <Link to={createPageUrl("Contact")} className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Contact</Link>
+            <Link to={createPageUrl("Home")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Home</Link>
+            <Link to={createPageUrl("About")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">About</Link>
+            <Link to={createPageUrl("WhyOutple")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Why Outple</Link>
+            <Link to={createPageUrl("Services")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Services</Link>
+            <Link to={createPageUrl("HowItWorks")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">How It Works</Link>
+            <Link to={createPageUrl("WhyMalawi")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Why Malawi</Link>
+            <Link to={createPageUrl("OurValues")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Our Values</Link>
+            <Link to={createPageUrl("CaseStudies")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Case Studies</Link>
+            <Link to={createPageUrl("FindJobs")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Find Jobs</Link>
+            <Link to={createPageUrl("Contact")} className="block px-4 py-3 rounded-xl text-[14px] font-medium text-gray-700 hover:text-[#432d7e] hover:bg-purple-50 mb-1">Contact</Link>
             <div className="border-t border-gray-100 mt-3 pt-3">
-              <Link to={createPageUrl("HireTeam")} className="block text-center text-sm font-bold bg-[#432d7e] text-white px-4 py-3 rounded-full hover:bg-[#2d1a5e] transition">
+              <Link to={createPageUrl("HireTeam")} className="block text-center text-[14px] font-semibold bg-[#432d7e] text-white px-4 py-3 rounded-full hover:bg-[#2d1a5e] transition">
                 Hire Talent
               </Link>
             </div>
@@ -166,16 +166,16 @@ export default function Layout({ children, currentPageName }) {
                 alt="Outple"
                 className="h-10 w-auto brightness-0 invert mb-4"
               />
-              <p className="text-gray-400 text-sm leading-relaxed mb-2">Outple.</p>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+              <p className="text-gray-400 text-[16px] leading-[1.6] mb-2">Outple.</p>
+              <p className="text-gray-500 text-[14px] leading-[1.6] mb-5">
                 Connecting world-class businesses with Malawi's finest remote professionals.
               </p>
-              <p className="text-gray-500 text-xs">Blantyre, Malawi & London, UK</p>
+              <p className="text-gray-500 text-[12px] leading-[1.5]">Blantyre, Malawi & London, UK</p>
             </div>
 
             {/* Company */}
             <div>
-              <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Company</h4>
+              <h4 className="font-semibold text-white mb-4 text-[14px] leading-[1.3] uppercase tracking-wider">Company</h4>
               <ul className="space-y-2.5">
                 {[
                   { label: "About Us", page: "About" },
@@ -186,7 +186,7 @@ export default function Layout({ children, currentPageName }) {
                   { label: "Contact Us", page: "Contact" },
                 ].map(item => (
                   <li key={item.label}>
-                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-sm hover:text-white transition-colors">{item.label}</Link>
+                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-[14px] leading-[1.6] hover:text-white transition-colors">{item.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -194,7 +194,7 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Services */}
             <div>
-              <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Services</h4>
+              <h4 className="font-semibold text-white mb-4 text-[14px] leading-[1.3] uppercase tracking-wider">Services</h4>
               <ul className="space-y-2.5">
                 {[
                   { label: "All Services", page: "Services" },
@@ -203,7 +203,7 @@ export default function Layout({ children, currentPageName }) {
                   { label: "Find Jobs", page: "FindJobs" },
                 ].map(item => (
                   <li key={item.label}>
-                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-sm hover:text-white transition-colors">{item.label}</Link>
+                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-[14px] leading-[1.6] hover:text-white transition-colors">{item.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -211,14 +211,14 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Legal */}
             <div>
-              <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Legal</h4>
+              <h4 className="font-semibold text-white mb-4 text-[14px] leading-[1.3] uppercase tracking-wider">Legal</h4>
               <ul className="space-y-2.5">
                 {[
                   { label: "Privacy Policy", page: "PrivacyPolicy" },
                   { label: "Terms of Service", page: "TermsOfService" },
                 ].map(item => (
                   <li key={item.label}>
-                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-sm hover:text-white transition-colors">{item.label}</Link>
+                    <Link to={createPageUrl(item.page)} className="text-gray-400 text-[14px] leading-[1.6] hover:text-white transition-colors">{item.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -226,8 +226,8 @@ export default function Layout({ children, currentPageName }) {
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Outple Limited. All rights reserved.</p>
-            <p className="text-gray-600 text-sm">Outple.</p>
+            <p className="text-gray-500 text-[14px] leading-[1.6]"> {new Date().getFullYear()} Outple Limited. All rights reserved.</p>
+            <p className="text-gray-600 text-[14px] leading-[1.6]">Outple.</p>
           </div>
         </div>
       </footer>

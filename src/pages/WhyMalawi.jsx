@@ -108,9 +108,9 @@ export default function WhyMalawi() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/75 to-black/60" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-32">
-          <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">The Warm Heart of Africa</span>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">Why Malawi?</h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+          <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">The Warm Heart of Africa</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">Why Malawi?</h1>
+          <p className="text-[18px] text-white/80 max-w-2xl mx-auto leading-[1.6]">
             Malawi is one of Africa's hidden gems — a nation of driven, educated, English-speaking professionals ready to take on the world from home.
           </p>
         </div>
@@ -122,8 +122,8 @@ export default function WhyMalawi() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((s, i) => (
               <div key={i} className="text-center">
-                <div className="text-4xl font-bold text-[#432d7e] mb-1">{s.value}</div>
-                <div className="text-gray-500 text-sm">{s.label}</div>
+                <div className="text-[36px] font-bold text-[#432d7e] leading-[1.2] mb-1">{s.value}</div>
+                <div className="text-gray-500 text-[14px] leading-[1.5]">{s.label}</div>
               </div>
             ))}
           </div>
@@ -135,9 +135,9 @@ export default function WhyMalawi() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-4 block">Blantyre, Malawi</span>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">Africa’s Hidden Talent Powerhouse</h2>
-              <p className="text-gray-500 leading-relaxed text-lg mb-6">
+              <span className="text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-4 block">Blantyre, Malawi</span>
+              <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-6">Africa's Hidden Talent Powerhouse</h2>
+              <p className="text-gray-500 text-[16px] leading-[1.6] mb-6">
                 Malawi nicknamed the “warm heart of Africa” for its culture rooted in friendliness and resilience,
                 Malawi  is also a home to one of Africa’s strongest education systems, producing ambitious,
                 high-performing graduates across disciplines. Despite this deep talent pool,
@@ -145,12 +145,12 @@ export default function WhyMalawi() {
                 a difference — and benefit at the same time.
               </p>
 
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">Hiring with Impact</h4>
+              <h4 className="text-[22px] font-semibold text-gray-900 leading-[1.3] mb-4">Hiring with Impact</h4>
 
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-gray-500 text-[16px] leading-[1.6]">
                 Every hire through Outple not only gain top talent but also help unlock the potential of an entire nation. You are helping to
               </p>
-              <ul className="list-disc list-inside text-gray-500 leading-relaxed">
+              <ul className="list-disc list-inside text-gray-500 text-[16px] leading-[1.6]">
                 <li>Reduce unemployment, empower youth, and fuel sustainable growth in Malawi. Together, we’re building stronger businesses and brighter futures.</li>
                 <li>Empower skilled professionals with global opportunities</li>
               </ul>
@@ -163,8 +163,8 @@ export default function WhyMalawi() {
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-xl">
-                <p className="font-bold text-gray-900 text-sm">📍 Blantyre, Malawi</p>
-                <p className="text-gray-500 text-xs">Commercial Capital · 1M+ Population · GMT+2</p>
+                <p className="font-semibold text-gray-900 text-[14px] leading-[1.3]">📍 Blantyre, Malawi</p>
+                <p className="text-gray-500 text-[12px] leading-[1.5]">Commercial Capital · 1M+ Population · GMT+2</p>
               </div>
             </div>
           </div>
@@ -180,8 +180,8 @@ export default function WhyMalawi() {
                 <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-5">
                   <r.icon className="w-6 h-6 text-[#432d7e]" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">{r.title}</h2>
-                <p className="text-gray-500 leading-relaxed text-lg">{r.desc}</p>
+                <h2 className="text-[28px] font-semibold text-gray-900 leading-[1.3] mb-4">{r.title}</h2>
+                <p className="text-gray-500 text-[16px] leading-[1.6]">{r.desc}</p>
               </div>
               <div className={`${i % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""} h-64 flex items-center justify-center p-4`}>
                 <div className="w-full h-full max-w-xs mx-auto">
@@ -196,19 +196,20 @@ export default function WhyMalawi() {
       {/* Quote */}
       <section className="py-20 bg-[#432d7e]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <blockquote className="text-2xl lg:text-3xl text-white font-medium leading-relaxed mb-8 italic">
-            "Malawi is not just a source of labour. It is a source of professionals who are eager, capable, and ready to prove themselves on the global stage."
+          <blockquote className="text-[28px] lg:text-[32px] text-white font-medium leading-[1.3] mb-8 italic">
+            "Malawi offers a growing pool of highly capable professionals
+            equipped to deliver value in today’s global economy."
           </blockquote>
-          <p className="text-white/60 text-sm">— Outple</p>
+          <p className="text-white/60 text-[14px] leading-[1.5]">— Outple</p>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to tap into this talent?</h2>
-          <p className="text-gray-500 text-lg mb-8">Let us introduce you to Malawi's finest professionals, ready to work for your business.</p>
-          <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
+          <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-4">Ready to tap into this talent?</h2>
+          <p className="text-gray-500 text-[16px] leading-[1.6] mb-8">Let us introduce you to Malawi's finest professionals, ready to work for your business.</p>
+          <Link to={createPageUrl("HireTeam")} className="inline-flex items-center gap-2 bg-[#432d7e] text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-[#2d1a5e] transition-colors group">
             Hire Malawian Talent <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

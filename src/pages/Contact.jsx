@@ -39,8 +39,8 @@ export default function Contact() {
     <div className="min-h-screen bg-white pt-20">
       <section className="py-20 bg-gradient-to-br from-[#1a0533] to-[#3d1078]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Get in Touch</h1>
-          <p className="text-purple-200 text-xl max-w-xl mx-auto">Whether you're looking to hire or seeking your next opportunity, we're here to help.</p>
+          <h1 className="text-[48px] font-bold text-white leading-[1.2] mb-4">Get in Touch</h1>
+          <p className="text-purple-200 text-[18px] leading-[1.6] max-w-xl mx-auto">Whether you're looking to hire or seeking your next opportunity, we're here to help.</p>
         </div>
       </section>
 
@@ -50,7 +50,7 @@ export default function Contact() {
             {/* Contact info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                <h2 className="text-[36px] font-bold text-gray-900 leading-[1.3] mb-6">Contact Information</h2>
                 {[
                   { icon: Mail, label: "Email", value: "hello@outple.com" },
                   { icon: Phone, label: "Phone (Malawi)", value: "+265 999 414 113" },
@@ -62,17 +62,17 @@ export default function Contact() {
                       <item.icon className="w-5 h-5 text-[#3d1078]" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-400 mb-0.5">{item.label}</p>
-                      <p className="font-semibold text-gray-900">{item.value}</p>
+                      <p className="text-[14px] leading-[1.5] text-gray-400 mb-0.5">{item.label}</p>
+                      <p className="font-semibold text-gray-900 text-[16px] leading-[1.3]">{item.value}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
               <div className="bg-gradient-to-br from-[#2d0a5e] to-[#3d1078] rounded-2xl p-6 text-white">
-                <h3 className="font-bold text-lg mb-2">Office Hours</h3>
-                <p className="text-purple-200 text-sm mb-1">Monday – Friday: 8:00 AM – 6:00 PM (GMT+2)</p>
-                <p className="text-purple-200 text-sm">Saturday: 9:00 AM – 1:00 PM</p>
+                <h3 className="font-semibold text-[22px] leading-[1.3] mb-2">Office Hours</h3>
+                <p className="text-purple-200 text-[14px] leading-[1.6] mb-1">Monday – Friday: 8:00 AM – 6:00 PM (GMT+2)</p>
+                <p className="text-purple-200 text-[14px] leading-[1.6]">Saturday: 9:00 AM – 1:00 PM</p>
               </div>
             </div>
 
@@ -81,40 +81,40 @@ export default function Contact() {
               {submitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-2xl p-12 text-center">
                   <CheckCircle className="w-14 h-14 text-green-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-500">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                  <h3 className="text-[28px] font-bold text-gray-900 leading-[1.3] mb-2">Message Sent!</h3>
+                  <p className="text-gray-500 text-[16px] leading-[1.6]">Thank you for reaching out. We'll get back to you within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 space-y-5">
                   {error && (
-                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
+                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-[14px] leading-[1.6]">
                       {error}
                     </div>
                   )}
 
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                      <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
+                      <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Full Name *</label>
+                      <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                      <input required type="email" className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
+                      <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Email Address *</label>
+                      <input required type="email" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Company Name *</label>
-                    <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} />
+                    <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Company Name *</label>
+                    <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Subject *</label>
-                    <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} />
+                    <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Subject *</label>
+                    <input required className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition" value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
-                    <textarea required rows={5} className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} />
+                    <label className="block text-[14px] font-medium text-gray-700 leading-[1.3] mb-1">Message *</label>
+                    <textarea required rows={5} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-[#3d1078]/30 focus:border-[#3d1078] transition resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} />
                   </div>
-                  <button type="submit" disabled={loading} className="w-full bg-[#3d1078] text-white font-semibold py-4 rounded-xl hover:bg-[#2d0a5e] transition-colors flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed">
+                  <button type="submit" disabled={loading} className="w-full bg-[#3d1078] text-white text-[16px] font-semibold py-4 rounded-xl hover:bg-[#2d0a5e] transition-colors flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed">
                     {loading ? (
                       <><Loader2 className="w-5 h-5 animate-spin" /> Sending...</>
                     ) : (

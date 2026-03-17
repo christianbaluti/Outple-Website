@@ -25,10 +25,10 @@ export default function WhyOutple() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/75 to-black/60" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-32">
-          <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Why Choose Us</span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">Why Outple?</h1>
-          <p className="text-2xl text-purple-200 font-semibold mb-4">Smart Outsourcing. Real Impact.</p>
-          <p className="text-lg text-white/75 max-w-3xl mx-auto leading-relaxed">
+          <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Why Choose Us</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">Why Outple?</h1>
+          <p className="text-[28px] text-purple-200 font-semibold leading-[1.3] mb-4">Smart Outsourcing. Real Impact.</p>
+          <p className="text-[18px] text-white/75 max-w-3xl mx-auto leading-[1.6]">
             At Outple, we connect businesses around the world with Malawi's top talent — a country known for its exceptional education system, skilled professionals, and warm, friendly culture.
           </p>
         </div>
@@ -39,20 +39,20 @@ export default function WhyOutple() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-[#432d7e] mb-2">50,000+</div>
-              <div className="text-gray-500">Qualified Candidates</div>
+              <div className="text-[36px] font-bold text-[#432d7e] leading-[1.2] mb-2">50,000+</div>
+              <div className="text-gray-500 text-[14px] leading-[1.5]">Qualified Candidates</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#432d7e] mb-2">48hrs</div>
-              <div className="text-gray-500">Average Placement</div>
+              <div className="text-[36px] font-bold text-[#432d7e] leading-[1.2] mb-2">48hrs</div>
+              <div className="text-gray-500 text-[14px] leading-[1.5]">Average Placement</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#432d7e] mb-2">100+</div>
-              <div className="text-gray-500">Global Clients</div>
+              <div className="text-[36px] font-bold text-[#432d7e] leading-[1.2] mb-2">100+</div>
+              <div className="text-gray-500 text-[14px] leading-[1.5]">Global Clients</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#432d7e] mb-2">95%</div>
-              <div className="text-gray-500">Client Retention</div>
+              <div className="text-[36px] font-bold text-[#432d7e] leading-[1.2] mb-2">95%</div>
+              <div className="text-gray-500 text-[14px] leading-[1.5]">Client Retention</div>
             </div>
           </div>
         </div>
@@ -63,12 +63,12 @@ export default function WhyOutple() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-4">Our Network</span>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Access to 50,000+ Qualified Candidates</h2>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-4">Our Network</span>
+              <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-6">Access to 50,000+ Qualified Candidates</h2>
+              <p className="text-gray-500 text-[16px] leading-[1.6] mb-6">
                 With over 50,000 qualified candidates in our talent network, we help companies scale faster, smarter, and more affordably. From startups to enterprise teams, we simplify remote staffing — matching you with vetted, highly-educated professionals across key industries.
               </p>
-              <Link to={createPageUrl("Services")} className="inline-flex items-center gap-2 text-[#432d7e] font-semibold hover:gap-3 transition-all">
+              <Link to={createPageUrl("Services")} className="inline-flex items-center gap-2 text-[#432d7e] text-[16px] font-semibold hover:gap-3 transition-all">
                 View Our Services <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -79,8 +79,8 @@ export default function WhyOutple() {
 
           {/* Benefits Grid */}
           <div className="text-center mb-12">
-            <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3">Why Work With Us</span>
-            <h2 className="text-4xl font-bold text-gray-900">The Outple Advantage</h2>
+            <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3">Why Work With Us</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2]">The Outple Advantage</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
@@ -88,8 +88,8 @@ export default function WhyOutple() {
                 <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-[#432d7e] transition-colors">
                   <b.icon className="w-7 h-7 text-[#432d7e] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{b.title}</h3>
-                <p className="text-gray-500 leading-relaxed">{b.desc}</p>
+                <h3 className="text-[22px] font-semibold text-gray-900 leading-[1.3] mb-3">{b.title}</h3>
+                <p className="text-gray-500 text-[16px] leading-[1.6]">{b.desc}</p>
               </div>
             ))}
           </div>
@@ -100,29 +100,29 @@ export default function WhyOutple() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3">Our Commitment</span>
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">The Outple Promise</h2>
-            <p className="text-xl text-[#432d7e] font-semibold">People First. Purpose Always.</p>
+            <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3">Our Commitment</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2] mb-2">The Outple Promise</h2>
+            <p className="text-[18px] text-[#432d7e] font-semibold leading-[1.3]">People First. Purpose Always.</p>
           </div>
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-gray-100">
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-gray-600 text-[18px] leading-[1.6] mb-8">
               We don't just fill roles — we build bridges. Every hire through Outple:
             </p>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Empowers a skilled young professional in Malawi with life-changing work</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Empowers a skilled young professional in Malawi with life-changing work</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Drives inclusive economic growth</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Drives inclusive economic growth</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#432d7e] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">Supports your business with reliable, high-performing team members</span>
+                <span className="text-gray-700 text-[16px] leading-[1.6]">Supports your business with reliable, high-performing team members</span>
               </li>
             </ul>
-            <p className="text-gray-600 text-lg font-medium">
+            <p className="text-gray-600 text-[18px] leading-[1.6] font-medium">
               Outsourcing can be smart and meaningful. With Outple, it's both.
             </p>
           </div>
@@ -132,13 +132,13 @@ export default function WhyOutple() {
       {/* CTA */}
       <section className="py-20 bg-[#432d7e]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Ready to Build Your Global Team?</h2>
-          <p className="text-purple-200 text-lg mb-8">Join companies worldwide hiring smarter with Outple. Access Malawi's brightest talent.</p>
+          <h2 className="text-[36px] font-bold text-white leading-[1.2] mb-4">Ready to Build Your Global Team?</h2>
+          <p className="text-purple-200 text-[18px] leading-[1.6] mb-8">Join companies worldwide hiring smarter with Outple. Access Malawi's brightest talent.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
+            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
               Start Hiring <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to={createPageUrl("Contact")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-colors">
+            <Link to={createPageUrl("Contact")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-colors">
               Contact Us
             </Link>
           </div>

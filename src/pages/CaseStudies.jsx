@@ -79,9 +79,9 @@ export default function CaseStudies() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#432d7e]/90 via-[#432d7e]/75 to-black/60" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center py-32">
-          <span className="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Success Stories</span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">Case Studies & Testimonials</h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto">
+          <span className="inline-block bg-white/10 text-white/80 text-[14px] font-medium leading-[1.3] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">Success Stories</span>
+          <h1 className="text-[48px] lg:text-[56px] font-bold text-white leading-[1.2] mb-6">Case Studies & Testimonials</h1>
+          <p className="text-[18px] text-white/75 leading-[1.6] max-w-2xl mx-auto">
             See how businesses worldwide have transformed their operations with Outple's exceptional talent from Malawi.
           </p>
         </div>
@@ -91,8 +91,8 @@ export default function CaseStudies() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3">Real Results</span>
-            <h2 className="text-4xl font-bold text-gray-900">Case Studies</h2>
+            <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3">Real Results</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2]">Case Studies</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study, i) => (
@@ -100,20 +100,20 @@ export default function CaseStudies() {
                 <div className="relative h-48 overflow-hidden bg-gray-100">
                   <img src={study.pdfPreview} alt={`${study.title} case study preview`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#432d7e] text-white text-xs font-semibold px-3 py-1 rounded-full">{study.industry}</span>
+                    <span className="bg-[#432d7e] text-white text-[12px] leading-[1.5] font-semibold px-3 py-1 rounded-full">{study.industry}</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{study.title}</h3>
-                  <p className="text-gray-500 text-sm mb-4 leading-relaxed">{study.summary}</p>
+                  <h3 className="text-[22px] font-semibold text-gray-900 leading-[1.3] mb-2">{study.title}</h3>
+                  <p className="text-gray-500 text-[14px] leading-[1.6] mb-4">{study.summary}</p>
                   <div className="bg-purple-50 rounded-xl p-3 mb-4">
-                    <p className="text-[#432d7e] font-semibold text-sm">{study.result}</p>
+                    <p className="text-[#432d7e] font-semibold text-[14px] leading-[1.5]">{study.result}</p>
                   </div>
                   <a
                     href={study.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#432d7e] font-semibold hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-[#432d7e] text-[14px] font-semibold hover:gap-3 transition-all"
                   >
                     <FileText className="w-4 h-4" />
                     Download Case Study
@@ -130,8 +130,8 @@ export default function CaseStudies() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="inline-block text-[#432d7e] font-semibold text-sm tracking-widest uppercase mb-3">What Our Clients Say</span>
-            <h2 className="text-4xl font-bold text-gray-900">Testimonials</h2>
+            <span className="inline-block text-[#432d7e] font-medium text-[14px] leading-[1.3] tracking-widest uppercase mb-3">What Our Clients Say</span>
+            <h2 className="text-[36px] font-bold text-gray-900 leading-[1.2]">Testimonials</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((t, i) => (
@@ -142,10 +142,10 @@ export default function CaseStudies() {
                   ))}
                 </div>
                 <Quote className="w-10 h-10 text-purple-200 mb-4" />
-                <p className="text-gray-600 leading-relaxed mb-6 italic">"{t.quote}"</p>
+                <p className="text-gray-600 text-[16px] leading-[1.6] mb-6 italic">"{t.quote}"</p>
                 <div>
-                  <p className="font-bold text-gray-900">{t.author}</p>
-                  <p className="text-gray-500 text-sm">{t.role}</p>
+                  <p className="font-semibold text-gray-900 text-[16px] leading-[1.3]">{t.author}</p>
+                  <p className="text-gray-500 text-[14px] leading-[1.5]">{t.role}</p>
                 </div>
               </div>
             ))}
@@ -156,15 +156,15 @@ export default function CaseStudies() {
       {/* CTA */}
       <section className="py-20 bg-[#432d7e]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Join Us</h2>
-          <p className="text-purple-200 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-[36px] font-bold text-white leading-[1.2] mb-4">Join Us</h2>
+          <p className="text-purple-200 text-[18px] leading-[1.6] mb-8 max-w-2xl mx-auto">
             Whether you're a business leader looking to scale with world-class professionals, or a skilled Malawian seeking global opportunities, Outple is here to make connections that matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
+            <Link to={createPageUrl("HireTeam")} className="inline-flex items-center justify-center gap-2 bg-white text-[#432d7e] text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors group">
               Hire Talent <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-colors">
+            <Link to={createPageUrl("FindJobs")} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white text-[16px] font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-colors">
               Find Jobs
             </Link>
           </div>
